@@ -1,0 +1,20 @@
+{
+  "name": "Portfolio",
+  "short_name": "Portfolio",
+  "icons": [
+    {
+      "src": "/images/app-development.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/app-development.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=a2hs",
+  "theme_color": "#7952b3",
+  "background_color": "#7952b3",
+  "display": "standalone"
+}

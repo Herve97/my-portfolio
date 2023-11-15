@@ -25,9 +25,6 @@ const iam = document.querySelector(".iam"),
   locationTitle = document.querySelector(".location-title"),
   langs = document.querySelector(".langs"),
   link = document.querySelectorAll(".linked");
-// select = document.querySelectorAll("select"),
-
-console.log("linked: ", link);
 
 const data = {
   français: {

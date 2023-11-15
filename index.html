@@ -154,33 +154,40 @@
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex flex-column justify-content-center">
+      <!-- Language Select -->
+
       <nav id="navbar" class="navbar nav-menu">
         <ul>
           <li>
-            <a href="#hero" class="nav-link scrollto active"
-              ><i class="bx bx-home"></i> <span>Home</span></a
-            >
+            <a href="#hero" class="nav-link scrollto active">
+              <i class="bx bx-home"></i> <span class="home-nav">Home</span>
+            </a>
           </li>
           <li>
             <a href="#about" class="nav-link scrollto"
-              ><i class="bx bx-user"></i> <span>About Me</span></a
+              ><i class="bx bx-user"></i>
+              <span class="about-nav">About Me</span></a
             >
           </li>
           <li>
             <a href="#skills" class="nav-link scrollto"
-              ><i class="bx bx-file-blank"></i> <span>skills</span></a
+              ><i class="bx bx-file-blank"></i>
+              <span class="skills-nav">skills</span></a
             >
           </li>
           <li>
             <a href="#projects" class="nav-link scrollto"
-              ><i class="bx bx-server"></i> <span>Projects</span></a
+              ><i class="bx bx-server"></i>
+              <span class="projects-nav">Projects</span></a
             >
           </li>
           <li>
             <a href="#contact" class="nav-link scrollto"
-              ><i class="bx bx-envelope"></i> <span>Contact</span></a
+              ><i class="bx bx-envelope"></i>
+              <span class="contact-nav">Contact</span></a
             >
           </li>
         </ul>
@@ -191,10 +198,26 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex flex-column justify-content-center">
+      <div
+        class="langs d-flex flex-column ms-md-auto me-3 mt-0"
+        style="z-index: 10"
+      >
+        <a href="#" data-lang="anglais" class="linked active"> ENG </a>
+        <a href="#" data-lang="français" class="linked"> FRA</a>
+
+        <!-- <select class="form-control">
+          <option data-lang="anglais" value="anglais" selected>EN</option>
+          <option data-lang="français" value="français">FR</option>
+        </select> -->
+      </div>
+      <!-- <nav class="d-inline-flex ms-md-auto me-3 mt-0" style="z-index: 10"> -->
+
+      <!-- </nav> -->
+
       <div class="container" data-aos="zoom-in" data-aos-delay="100">
         <h1>Hervé Bakongo</h1>
         <p>
-          I'm
+          <span class="iam">I'm</span>
           <span
             class="typed"
             data-typed-items="Fullstack Web Developer, Web Master, Backend Developer"
@@ -226,11 +249,7 @@
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>About Me</h2>
-            <!-- <p class="text-center">
-              
-            </p> -->
-            <!-- <p></p> -->
+            <h2 class="about-title">About Me</h2>
           </div>
 
           <div class="row">
@@ -259,7 +278,8 @@
                     </li>
 
                     <li>
-                      <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong class="about-city">City:</strong>
                       <span>Kinshasa, DRC</span>
                     </li>
                   </ul>
@@ -268,8 +288,8 @@
                   <ul>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>Degree:</strong>
-                      <span>Bachelor</span>
+                      <strong class="degree">Degree:</strong>
+                      <span class="bachelor">Bachelor</span>
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
@@ -278,15 +298,16 @@
                     </li>
                     <li>
                       <i class="bi bi-chevron-right"></i>
-                      <strong>Freelance:</strong> <span>Available</span>
+                      <strong>Freelance:</strong>
+                      <span class="available">Available</span>
                     </li>
                   </ul>
                 </div>
                 <!-- <div class="col-lg-10"> -->
-                <p class="d-flex justify-content start flex-wrap">
-                  I am a fullstack web developer with 3 years of experience in
+                <p class="d-flex justify-content start flex-wrap about-text">
+                  I am fullstack web developer with 3 years of experience in
                   Node.js, 1.5 year in Angular and 2 years with WordPress. I am
-                  a qualified and experienced professional capable of developing
+                  qualified and experienced professional capable of developing
                   complete web applications, from design to production. My
                   skills and knowledge make me an ideal candidate for full-stack
                   web developer positions in companies of all sizes. In addition
@@ -312,10 +333,7 @@
       <section id="skills" class="skills section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Skills</h2>
-            <!-- <p>
-              
-            </p> -->
+            <h2 class="skills-title">Skills</h2>
           </div>
 
           <div class="row skills-content">
@@ -503,8 +521,8 @@
       <section id="projects" class="resume">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Recents Projects</h2>
-            <p>
+            <h2 class="projects-title">Recents Projects</h2>
+            <p class="projects-desc">
               Here is the list of the recents projects I worked on. The rest you
               can see on my
               <a
@@ -524,7 +542,7 @@
               <!-- <h3 class="resume-title">Sumary</h3> -->
               <div class="resume-item">
                 <h4>Bulk Sms</h4>
-                <p>
+                <p class="bulk-desc">
                   This project involves sending SMS Bulk using its own contact
                   list while filter which may or may not receive a specific SMS
                   and make SMS marketing campaigns using large Emergence SARL
@@ -536,20 +554,18 @@
               <!-- <h3 class="resume-title">Education</h3> -->
               <div class="resume-item">
                 <h4>Smart Insurance Control</h4>
-                <p>
+                <p class="smart-desc">
                   This project consists of alerting insurers of the passage of
                   an insured person in their various partner centers and the
                   system notifies the service provider by SMS whether or not he
-                  should receive the insured person in front of him if the
-                  insured person does not correspond more to the different
-                  regulations of the insurer. We created the project's RESTAPI
-                  in Nodejs (ExpressJs), a MySQL database, cached with Redis and
-                  Pusher for realtime.
+                  should receive the insured person in front of him. We created
+                  the project's RESTAPI in Nodejs (ExpressJs), a MySQL database,
+                  cached with Redis and Pusher for realtime.
                 </p>
               </div>
               <div class="resume-item">
                 <h4>Lilia communication Website</h4>
-                <p>
+                <p class="lilia-desc">
                   A one page website created using Wordpress for
                   <a href="https://lilia-communication.com/" target="_blank">
                     lilia-communication communication </a
@@ -561,7 +577,7 @@
             <div class="col-lg-6">
               <div class="resume-item">
                 <h4>Emergence Sarl Website</h4>
-                <p>
+                <p class="emergence-desc">
                   A showcase website created using Wordpress for
                   <a href="https://emergence-rdc.com/" target="_blank">
                     Emergence Sarl </a
@@ -574,7 +590,7 @@
 
               <div class="resume-item">
                 <h4>Proxilab Website</h4>
-                <p>
+                <p class="proxi-desc">
                   A website for a medical testing center created using Wordpress
                   for
                   <a href="https://proxilab.org/" target="_blank"> Proxilab </a
@@ -587,11 +603,11 @@
 
               <div class="resume-item">
                 <h4>Gnioos Portails</h4>
-                <p>
+                <p class="gnioos-desc">
                   A backend application created with Nestjs using the monorepo
                   for the 4 modules selected according to the monolithic
                   architecture. In this application we used Mongo Atlas as
-                  database server, Prisma as ODM and Docker to facilitate CI/CD
+                  database server, Prisma as ODM and Docker
                 </p>
               </div>
             </div>
@@ -612,7 +628,7 @@
               <div class="info">
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
+                  <h4 class="location-title">Address:</h4>
                   <p>5 Miao, Gombele, Kinshasa/Lemba</p>
                 </div>
               </div>
@@ -637,67 +653,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="col-lg-8 mt-5 mt-lg-0">
-              <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
-                class="php-email-form"
-              >
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input
-                      type="text"
-                      name="name"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="email"
-                      id="email"
-                      placeholder="Your Email"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-                <div class="form-group mt-3">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    rows="5"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
-            </div> -->
           </div>
         </div>
       </section>
@@ -763,6 +718,7 @@
     <script src="assets/typed.js/typed.umd.js"></script>
     <script src="assets/waypoints/noframework.waypoints.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lang.js"></script>
   </body>
 
   <!-- Our codes -->

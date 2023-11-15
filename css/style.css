@@ -251,7 +251,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: #121313;
 }
 
 .mobile-nav-active {
@@ -714,7 +714,7 @@ section {
 
 .bi {
   vertical-align: -0.125em;
-  fill: currentColor;
+  /* fill: currentColor; */
 }
 
 .b-example-divider {
@@ -739,4 +739,84 @@ section {
 .btn-light:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+/*--------------------------------------------------------------
+# Language Menu
+--------------------------------------------------------------*/
+
+.langs {
+  padding: 0;
+  display: block;
+}
+
+.langs * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.langs a,
+.langs a:focus {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #45505b;
+  padding: 0 8px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 12px;
+  border-radius: 50px;
+  background: #f2f3f5;
+  height: 26px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.langs a,
+.langs a:focus {
+  font-size: 20px;
+}
+
+.langs a span,
+.langs a:focus span {
+  padding: 0 5px 0 7px;
+  color: #45505b;
+}
+
+@media (min-width: 992px) {
+  .langs a,
+  .langs a:focus {
+    width: 56px;
+  }
+
+  .langs a span,
+  .langs a:focus span {
+    display: none;
+    color: #fff;
+  }
+}
+
+.langs a:hover,
+.langs .active,
+.langs .active:focus,
+.langs li:hover > a {
+  color: #fff;
+  background: #0563bb;
+}
+
+.langs a:hover,
+.langs .active,
+.langs .active:focus {
+  color: #fff;
+}
+
+.langs a:hover {
+  width: 100%;
+  color: #fff;
+}
+
+.langs a:hover {
+  display: block;
 }

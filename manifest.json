@@ -3,12 +3,12 @@
   "short_name": "Portfolio",
   "icons": [
     {
-      "src": "/images/app-development.png",
+      "src": "images/app-development.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/images/app-development.png",
+      "src": "images/app-development.png",
       "sizes": "512x512",
       "type": "image/png"
     }

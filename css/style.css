@@ -796,6 +796,55 @@ section {
     display: none;
     color: #fff;
   }
+
+  .langs a:hover {
+    width: 30%;
+    color: #fff;
+  }
+
+  .langs a:hover {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .langs {
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
+  }
+
+  .langs a,
+  .langs a:focus {
+    width: 56px;
+  }
+
+  .langs a span,
+  .langs a:focus span {
+    display: none;
+    color: #fff;
+  }
+
+  .langs a:hover,
+  .langs .active,
+  .langs .active:focus {
+    color: #fff;
+    background: #0563bb;
+  }
+
+  .langs a:hover,
+  .langs .active,
+  .langs .active:focus {
+    color: #fff;
+  }
+
+  .langs a:hover {
+    width: 23% !important;
+    color: #fff;
+  }
+
+  .langs a:hover {
+    display: block;
+  }
 }
 
 .langs a:hover,
